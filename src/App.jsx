@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg';
 import heroImg from './assets/hero.png';
 import './App.css';
 import Greeting from './Greeting';
+import { FavoriteDrink, FavoriteFood } from './FavoriteFood';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,6 +28,9 @@ function App() {
           Count is {count}
         </button>
         <Greeting />
+        <h2>Importing Favorites:</h2>
+        <FavoriteFood />
+        <FavoriteDrink />
       </section>
 
       <div className='ticks'></div>
